@@ -4,12 +4,12 @@
   font-weight: 400;
   src: local(''),
        url('../fonts/MullerMedium.woff2') format('woff2'),
-       url('../fonts/MullerMedium.woff.woff') format('woff');
+       url('../fonts/MullerMedium.woff') format('woff');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'MullerRegular';
   font-style: normal;
   font-weight: 600;
   src: local(''),

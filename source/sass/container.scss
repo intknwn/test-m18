@@ -1,0 +1,14 @@
+.container {
+  position: relative;
+
+  max-width: $desktop-width;
+
+  margin: 0 auto;
+
+  &--fullpage {
+    width: 100%;
+    height: fill-available;
+
+    padding: 20px;
+  }
+}

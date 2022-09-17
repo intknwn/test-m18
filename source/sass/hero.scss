@@ -1,0 +1,195 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__text {
+  padding-top: 27px;
+  padding-left: 90px;
+}
+
+.hero__logo {
+  margin-bottom: 200px;
+}
+
+.hero__title {
+  max-width: 508px;
+
+  margin-bottom: 27px;
+  margin-left: -5px;
+
+  font-size: 64px;
+  line-height: 64px;
+
+  letter-spacing: -0.5px;
+}
+
+.hero__desc {
+  max-width: 456px;
+
+  margin-bottom: 44px;
+
+  font-size: 21px;
+  line-height: 30px;
+
+  letter-spacing: -0.01px;
+}
+
+.hero__button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero__lead-button {
+  width: 260px;
+  height: 51px;
+
+  margin-right: 31px;
+
+  font-family: "MullerMedium", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+
+  background-color: $orange;
+
+  border: none;
+  border-radius: 30px;
+  box-shadow: $orangeShadow;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $lightOrange;
+    box-shadow: $lightOrangeShadow;
+
+    outline: none;
+  }
+}
+
+.hero__start-date {
+  color: $gray;
+}
+
+.hero__scroll-button {
+  position: absolute;
+  left: 96px;
+  bottom: 30px;
+
+  padding: 0;
+  padding-left: 53px;
+
+  color: $orange;
+
+  font-family: "MullerMedium", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+
+  text-align: left;
+  letter-spacing: -0.01px;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 41px;
+    height: 30px;
+
+    background-image: url('../img/icon-arrows.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transform: translateY(-50%);
+
+    transition: all;
+  }
+
+  &:hover,
+  &:focus {
+    &:before {
+      left: 4px;
+      width: 33px;
+      background-image: url('../img/icon-arrows-hover.svg');
+    }
+  }
+}
+
+.hero__contact-button {
+  position: absolute;
+  top: 58px;
+  right: 103px;
+
+  font-family: "MullerMedium", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 25px;
+  color: $black;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &:before {
+    content: url('../img/icon-phone.svg');
+
+    position: absolute;
+    left: -25px;
+    top: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+}
+
+.hero__video {
+  position: relative;
+}
+
+.hero__video-preview {
+  width: 100%;
+  height: 100%;
+
+  max-width: 940px;
+  max-height: 920px;
+}
+
+.hero__play-button {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "MullerMedium", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  color: $orange;
+
+  border: none;
+  background-color: transparent;
+
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+
+  img {
+    margin-bottom: 21px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+}

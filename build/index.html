@@ -12,7 +12,30 @@
 <link rel="preload" href="fonts/MullerRegular.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 <body>
-  <h1>Проверка шрифтов</h1>
-  <p>Еще проверка</p>
+  <div class="container container--fullpage">
+    <section class="hero">
+      <div class="hero__text">
+        <img class="hero__logo" src="img/logo.svg" width="200" height="55" alt="Логотип компании «FIX Ремонт»">
+        <h1 class="hero__title">Ремонт квартир в типовых домах</h1>
+        <p class="hero__desc">Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.</p>
+        <div class="hero__button-wrapper">
+          <button class="hero__lead-button" type="button">Узнайте о запуске первым</button>
+          <p class="hero__start-date">Старт весной 2016</p>
+        </div>
+      </div>
+      <div class="hero__video">
+        <picture>
+          <!-- <source type="image/webp" srcset="img/video@1x.webp 1x, img/video@2x.webp 2x"> -->
+          <img class="hero__video-preview" src="img/video@1x.png" srcset="img/video@2x.png 2x" width="940" height="920" alt="Изображение рабочего места в минималистичном стиле">
+        </picture>
+        <button class="hero__play-button" type="button">
+          <img src="img/icon-play.svg" width="250" height="250" alt="Воспроизвести видео">
+          <span>Смотреть видео</span>
+        </button>
+      </div>
+      <button class="hero__scroll-button" type="button">Листайте вниз,<br> чтобы ничего не упустить</button>
+      <button class="hero__contact-button" type="button">Контакты</button>
+    </section>
+  </div>
 </body>
 </html>
