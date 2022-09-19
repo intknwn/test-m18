@@ -1,0 +1,156 @@
+.footer {
+  background-color: $lightestGray;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-list {
+  display: flex;
+
+  margin-bottom: 32px;
+}
+
+.footer__social-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 51px;
+  height: 51px;
+
+  background-color: $orange;
+
+  &:hover,
+  &:focus {
+    box-shadow: $lightOrangeShadow;
+  }
+}
+
+.footer__action-note {
+  margin-bottom: 5px;
+
+  font-size: 21px;
+  line-height: 26px;
+
+  letter-spacing: -0.01px;
+
+  text-align: center;
+}
+
+.footer__action-desc {
+  max-width: 440px;
+
+  margin-bottom: 80px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray;
+
+  text-align: center;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 835px;
+  width: 100%;
+
+  margin-bottom: 75px;
+  margin-left: 25px;
+
+  @media (max-width: $desktop) {
+    flex-direction: column;
+  }
+}
+
+.footer__phone,
+.footer__address,
+.footer__email {
+  font-size: 21px;
+  line-height: 30px;
+  color: $black;
+
+  letter-spacing: -0.1px;
+
+  text-decoration: none;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__phone,
+.footer__email {
+  position: relative;
+
+  &:before {
+    content: url('../img/icon-phone.svg');
+
+    position: absolute;
+    top: 0;
+    left: -40px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+}
+
+.footer__email {
+  &:before {
+    top: 3px;
+    content: url('../img/icon-email.svg');
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $orange;
+  }
+}
+
+.footer__address {
+  text-align: center;
+  line-height: 22px;
+
+  span {
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+  }
+}
+
+.footer__copyright {
+  width: 100%;
+
+  padding-top: 31px;
+  padding-bottom: 29px;
+
+  text-align: center;
+
+  border-top: 1px solid $lightGray;
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+  }
+}
