@@ -36,12 +36,22 @@
 
 .slider__slide-item {
   display: flex;
+  flex: 1 0 100%;
 
-  min-width: 100%;
+  padding-right: 20px;
+
+  &--inactive {
+    opacity: 0.6;
+  }
 }
 
 .slider__image img {
   display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 }
 
 .slider__slide-desc {
@@ -57,7 +67,7 @@
 .slider__controls {
   position: absolute;
   bottom: 0;
-  right: 75px;
+  right: 7.5%;
 
   display: flex;
   justify-content: space-between;
@@ -65,6 +75,11 @@
 
   width: 72px;
   height: 43px;
+
+  @media (max-width: $mobile) {
+    width: 48px;
+    height: 28px;
+  }
 }
 
 .slider__prev-button,
@@ -84,6 +99,11 @@
   &:hover,
   &:focus {
     height: 32px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 13px;
+    height: 28px;
   }
 }
 
