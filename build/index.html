@@ -1,65 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>FIX Ремонт — ремонт квартир в типовых домах</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="fonts/MullerMedium.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-<link rel="preload" href="fonts/MullerRegular.woff" as="font" type="font/woff" crossorigin="anonymous">
-</head>
-<body>
-  <div class="container container--fullpage">
-    <section class="hero">
-      <div class="hero__text">
-        <img class="hero__logo" src="img/logo.svg" width="200" height="55" alt="Логотип компании «FIX Ремонт»">
-        <h1 class="hero__title">Ремонт квартир в типовых домах</h1>
-        <p class="hero__desc">Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.</p>
-        <div class="hero__button-wrapper">
-          <button class="hero__lead-button" type="button">Узнайте о запуске первым</button>
-          <p class="hero__start-date">Старт весной 2016</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FIX Ремонт — ремонт квартир в типовых домах</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/MullerMedium.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/MullerRegular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container container--fullpage">
+      <section class="hero">
+        <div class="hero__text">
+          <img class="hero__logo" src="img/logo.svg" width="200" height="55" alt="Логотип компании «FIX Ремонт»">
+          <h1 class="hero__title">Ремонт квартир в типовых домах</h1>
+          <p class="hero__desc">
+            Готовый дизайн-проект, работы и материалы за 3 месяца от 610 т.р.
+          </p>
+          <div class="hero__button-wrapper">
+            <button class="hero__lead-button" type="button">
+              Узнайте о запуске первым
+            </button>
+            <p class="hero__start-date">Старт весной 2016</p>
+          </div>
         </div>
-      </div>
-      <div class="hero__video">
-        <picture>
-          <source type="image/webp" srcset="img/video@1x.webp 1x, img/video@2x.webp 2x">
-          <img class="hero__video-preview" src="img/video@1x.png" srcset="img/video@2x.png 2x" width="940" height="920" alt="Изображение рабочего места в минималистичном стиле">
-        </picture>
-        <button class="hero__play-button" type="button">
-          <img src="img/icon-play.svg" width="250" height="250" alt="Воспроизвести видео">
-          <span>Смотреть видео</span>
+        <div class="hero__video">
+          <picture>
+            <source type="image/webp" srcset="img/video@1x.webp 1x, img/video@2x.webp 2x">
+            <img class="hero__video-preview" src="img/video@1x.png" srcset="img/video@2x.png 2x" width="940" height="920" alt="Изображение рабочего места в минималистичном стиле">
+          </picture>
+          <button class="hero__play-button" type="button">
+            <img src="img/icon-play.svg" width="250" height="250" alt="Воспроизвести видео">
+            <span>Смотреть видео</span>
+          </button>
+        </div>
+        <button class="hero__scroll-button" type="button">
+          Листайте вниз,<br>
+          чтобы ничего не упустить
         </button>
-      </div>
-      <button class="hero__scroll-button" type="button">Листайте вниз,<br> чтобы ничего не упустить</button>
-      <button class="hero__contact-button" type="button">Контакты</button>
-    </section>
-  </div>
-  <div class="container">
-    <section class="features">
-      <h2 class="features__title">FIX Ремонт — это легко</h2>
-      <p class="features__desc">Готовые проекты, проверенные материалы и умелые руки</p>
-      <ul class="features__list">
-        <li class="features__list-item">
-          <h3 class="features__item-title">Опытная команда</h3>
-          <p class="features__item-desc">Команда проектировщиков и строителей со стажем работы более 6 лет</p>
-        </li>
-        <li class="features__list-item">
-          <h3 class="features__item-title">Типовые дизайн-проекты</h3>
-          <p class="features__item-desc">Три стиля чистовой отделки «под ключ» и спектрдополнительных услуг</p>
-        </li>
-        <li class="features__list-item">
-          <h3 class="features__item-title">Фиксированная смета</h3>
-          <p class="features__item-desc">Никаких дополнительных расходов во время ремонта. Расчет стоимости при заключении договора</p>
-        </li>
-        <li class="features__list-item features__list-item--terms">
-          <h3 class="features__item-title features__item-title--terms">Срок работ</h3>
-          <p class="features__item-desc features__item-desc--terms">3 месяца</p>
-        </li>
-      </ul>
-    </section>
-  </div>
-</body>
+        <button class="hero__contact-button" type="button">Контакты</button>
+      </section>
+    </div>
+    <div class="container">
+      <section class="features">
+        <h2 class="features__title">FIX Ремонт — это легко</h2>
+        <p class="features__desc">
+          Готовые проекты, проверенные материалы и умелые руки
+        </p>
+        <ul class="features__list">
+          <li class="features__list-item">
+            <h3 class="features__item-title">Опытная команда</h3>
+            <p class="features__item-desc">
+              Команда проектировщиков и строителей со стажем работы более 6 лет
+            </p>
+          </li>
+          <li class="features__list-item">
+            <h3 class="features__item-title">Типовые дизайн-проекты</h3>
+            <p class="features__item-desc">
+              Три стиля чистовой отделки «под ключ» и спектрдополнительных услуг
+            </p>
+          </li>
+          <li class="features__list-item">
+            <h3 class="features__item-title">Фиксированная смета</h3>
+            <p class="features__item-desc">
+              Никаких дополнительных расходов во время ремонта. Расчет стоимости
+              при заключении договора
+            </p>
+          </li>
+          <li class="features__list-item features__list-item--terms">
+            <h3 class="features__item-title features__item-title--terms">
+              Срок работ
+            </h3>
+            <p class="features__item-desc features__item-desc--terms">
+              3 месяца
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="slider">
+        <h2 class="slider__title">3 стиля интерьера</h2>
+        <p class="slider__desc">Скандинавский, классический и эко-стиль</p>
+        <div class="slider__wrapper">
+          <ul id="slider-container" class="slider__slides-list">
+            <li class="slider__slide-item">
+              <div class="slider__image">
+                <picture>
+                  <source type="image/webp" srcset="img/interior@1x.webp 1x, img/interior@2x.webp 2x">
+                  <img class="slider__slide-image" src="img/interior@1x.png" srcset="img/interior@2x.png 2x" width="750" height="500" alt="Фотография интерьера в скандинавском стиле">
+                </picture>
+              </div>
+              <div class="slider__text">
+                <p class="slider__slide-desc">
+                  Кафельная плитка в&nbsp;ванной комнате в&nbsp;скандинавском
+                  стиле
+                </p>
+              </div>
+            </li>
+            <li class="slider__slide-item">
+              <div class="slider__image">
+                <picture>
+                  <source type="image/webp" srcset="img/interior@1x.webp 1x, img/interior@2x.webp 2x">
+                  <img class="slider__slide-image" src="img/interior@1x.png" srcset="img/interior@2x.png 2x" width="750" height="500" alt="Фотография интерьера в классическом стиле">
+                </picture>
+              </div>
+              <div class="slider__text">
+                <p class="slider__slide-desc">
+                  Описание интерьера в классическом стиле
+                </p>
+              </div>
+            </li>
+            <li class="slider__slide-item">
+              <div class="slider__image">
+                <picture>
+                  <source type="image/webp" srcset="img/interior@1x.webp 1x, img/interior@2x.webp 2x">
+                  <img class="slider__slide-image" src="img/interior@1x.png" srcset="img/interior@2x.png 2x" width="750" height="500" alt="Фотография интерьера в эко-стиле">
+                </picture>
+              </div>
+              <div class="slider__text">
+                <p class="slider__slide-desc">
+                  Описание интерьера в эко-стиле
+                </p>
+            </div></li>
+          </ul>
+          <div class="slider__controls">
+            <button id="slider-button-prev" class="slider__prev-button">
+              <span class="v-hidden">Предыдущий слайд</span>
+            </button>
+            <button id="slider-button-next" class="slider__next-button">
+              <span class="v-hidden">Следующий слайд</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
