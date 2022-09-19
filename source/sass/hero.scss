@@ -1,15 +1,35 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 
 .hero__text {
   padding-top: 27px;
   padding-left: 90px;
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
 }
 
 .hero__logo {
-  margin-bottom: 200px;
+  width: 200px;
+  height: 55px;
+  margin-bottom: get-vw(200px);
+
+  @media (min-width: $desktop-xl) {
+    margin-bottom: 200px;
+  }
+
+  @media (max-width: $desktop) {
+    margin-bottom: 200px;
+  }
+
+  @media (max-width: $mobile) {
+    width: 135px;
+    height: auto;
+  }
 }
 
 .hero__title {
@@ -22,6 +42,25 @@
   line-height: 64px;
 
   letter-spacing: -0.5px;
+
+  @media (min-width: $mobile) and (max-width: $desktop-xl) {
+    max-width: get-vw(508px);
+
+    margin-bottom: get-vw(27px);
+    margin-left: get-vw(-5px);
+
+    font-size: get-vw(64px);
+    line-height: get-vw(64px);
+
+    letter-spacing: get-vw(-0.5px);
+  }
+
+  @media (max-width: $mobile) {
+    max-width: 290px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .hero__desc {
@@ -33,11 +72,27 @@
   line-height: 30px;
 
   letter-spacing: -0.01px;
+
+  @media (min-width: $mobile) and (max-width: $desktop-xl) {
+    max-width: get-vw(456px);
+
+    margin-bottom: get-vw(44px);
+
+    font-size: get-vw(21px);
+    line-height: get-vw(30px);
+
+    letter-spacing: get-vw(-0.01px);
+  }
 }
 
 .hero__button-wrapper {
   display: flex;
   align-items: center;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .hero__lead-button {
@@ -47,14 +102,14 @@
   margin-right: 31px;
 
   font-family: "MullerMedium", Arial, Helvetica, sans-serif;
+
+  color: $white;
   font-size: 16px;
   line-height: 18px;
-  color: $white;
-
   background-color: $orange;
 
   border: none;
-  border-radius: 30px;
+  border-radius: get-vw(30px);
   box-shadow: $orangeShadow;
 
   cursor: pointer;
@@ -66,16 +121,43 @@
 
     outline: none;
   }
+
+  @media (min-width: $mobile) and (max-width: $desktop) {
+    width: get-vw(260px);
+    height: get-vw(51px);
+
+    margin-right: get-vw(31px);
+
+    font-size: get-vw(16px);
+    line-height: get-vw(18px);
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 16px;
+  }
 }
 
 .hero__start-date {
+  font-size: 16px;
+  line-height: 18px;
   color: $gray;
+
+  @media (max-width: $desktop-xl) {
+    font-size: get-vw(16px);
+    line-height: get-vw(24px);
+  }
+
+  color: $gray;
+
+  @media (max-width: $mobile) {
+    padding-left: 25px;
+  }
 }
 
 .hero__scroll-button {
   position: absolute;
-  left: 96px;
-  bottom: 30px;
+  left: 115px;
+  bottom: 49px;
 
   padding: 0;
   padding-left: 53px;
@@ -120,6 +202,11 @@
       background-image: url('../img/icon-arrows-hover.svg');
     }
   }
+
+  @media (max-width: $mobile) {
+    left: 20px;
+    bottom: 20px;
+  }
 }
 
 .hero__contact-button {
@@ -138,43 +225,60 @@
   cursor: pointer;
 
   &:before {
-    content: url('../img/icon-phone.svg');
+    content: "";
 
     position: absolute;
     left: -25px;
     top: 0;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url('../img/icon-phone.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &:hover,
   &:focus {
     color: $orange;
   }
+
+  @media (max-width: $mobile) {
+    top: 27px;
+    right: 20px;
+  }
 }
 
 .hero__video {
   position: relative;
+  width: 51%;
+  height: 100%;
+
+  @media (max-width: $desktop) {
+    display: none;
+  }
 }
 
 .hero__video-preview {
   width: 100%;
   height: 100%;
 
-  max-width: 940px;
-  max-height: 920px;
+  object-fit: contain;
 }
 
 .hero__play-button {
   position: absolute;
-  top: 46%;
-  left: 50%;
+  top: 46.7%;
+  left: 50.5%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   font-family: "MullerMedium", Arial, Helvetica, sans-serif;
-  font-size: 21px;
-  line-height: 30px;
+  font-size: get-vw(21px);
+  line-height: get-vw(30px);
   color: $orange;
 
   border: none;
@@ -185,7 +289,10 @@
   cursor: pointer;
 
   img {
-    margin-bottom: 21px;
+    margin-bottom: get-vw(20px);
+
+    width: get-vw(250px);
+    height: get-vw(250px);
   }
 
   &:hover,
