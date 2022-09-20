@@ -4,25 +4,15 @@
 }
 
 .slider__title {
+  @extend .title;
+
   margin-bottom: 6px;
-
-  font-family: "MullerMedium", Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  line-height: 50px;
-
-  letter-spacing: -0.1px;
 }
 
 .slider__desc {
+  @extend .sub-title;
+
   margin-bottom: 51px;
-
-  font-family: "MullerMedium", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  color: $cyan;
-
-  letter-spacing: 0.62px;
-  text-transform: uppercase;
 }
 
 .slider__wrapper {

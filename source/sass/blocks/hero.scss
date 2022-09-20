@@ -1,6 +1,4 @@
 .hero {
-  display: flex;
-  justify-content: space-between;
   height: 100%;
 }
 
@@ -96,31 +94,9 @@
 }
 
 .hero__lead-button {
-  width: 260px;
-  height: 51px;
+  @extend .button;
 
   margin-right: 31px;
-
-  font-family: "MullerMedium", Arial, Helvetica, sans-serif;
-
-  color: $white;
-  font-size: 16px;
-  line-height: 18px;
-  background-color: $orange;
-
-  border: none;
-  border-radius: get-vw(30px);
-  box-shadow: $orangeShadow;
-
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $lightOrange;
-    box-shadow: $lightOrangeShadow;
-
-    outline: none;
-  }
 
   @media (min-width: $mobile) and (max-width: $desktop) {
     width: get-vw(260px);
@@ -142,7 +118,7 @@
   line-height: 18px;
   color: $gray;
 
-  @media (max-width: $desktop-xl) {
+  @media (min-width: $mobile) and (max-width: $desktop-xl) {
     font-size: get-vw(16px);
     line-height: get-vw(24px);
   }
@@ -277,8 +253,8 @@
   align-items: center;
 
   font-family: "MullerMedium", Arial, Helvetica, sans-serif;
-  font-size: get-vw(21px);
-  line-height: get-vw(30px);
+  font-size: 21px;
+  line-height: 30px;
   color: $orange;
 
   border: none;
@@ -289,14 +265,26 @@
   cursor: pointer;
 
   img {
-    margin-bottom: get-vw(20px);
+    margin-bottom: 20px;
 
-    width: get-vw(250px);
-    height: get-vw(250px);
+    width: 250px;
+    height: 250px;
   }
 
   &:hover,
   &:focus {
     color: $orange;
+  }
+
+  @media (max-width: $desktop-xl) {
+    img {
+      margin-bottom: get-vw(20px);
+
+      width: get-vw(250px);
+      height: get-vw(250px);
+    }
+
+    font-size: get-vw(21px);
+    line-height: get-vw(30px);
   }
 }
