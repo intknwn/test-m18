@@ -1,6 +1,34 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./js/form.js":
+/*!********************!*\
+  !*** ./js/form.js ***!
+  \********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "initFormSuccessHandler": function() { return /* binding */ initFormSuccessHandler; }
+/* harmony export */ });
+var initFormSuccessHandler = function initFormSuccessHandler() {
+  var form = document.forms.lead;
+  var specialOfferNote = document.querySelector(".form__special-offer");
+  var formWrapper = document.querySelector(".form__wrapper");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var div = document.createElement("div");
+    div.className = "form__success-note";
+    div.innerHTML = "\n      <img src=\"img/icon-tick.svg\" widht=\"194\" height=\"128\" />\n      <p class=\"form__success-message\">\n        \u0421\u043F\u0430\u0441\u0438\u0431\u043E! \u041C\u044B \u0431\u0443\u0434\u0435\u043C \u0434\u0435\u0440\u0436\u0430\u0442\u044C \u0432\u0430\u0441 \u0432 \u043A\u0443\u0440\u0441\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0439\n      </p>\n    ";
+    specialOfferNote.remove();
+    form.remove();
+    formWrapper.append(div);
+  });
+};
+
+/***/ }),
+
 /***/ "./js/scroll.js":
 /*!**********************!*\
   !*** ./js/scroll.js ***!
@@ -587,10 +615,13 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slider */ "./js/slider.js");
 /* harmony import */ var _scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scroll */ "./js/scroll.js");
+/* harmony import */ var _form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./form */ "./js/form.js");
+
 
 
 (0,_slider__WEBPACK_IMPORTED_MODULE_0__.initSlider)();
 (0,_scroll__WEBPACK_IMPORTED_MODULE_1__.initScroll)();
+(0,_form__WEBPACK_IMPORTED_MODULE_2__.initFormSuccessHandler)();
 }();
 /******/ })()
 ;
