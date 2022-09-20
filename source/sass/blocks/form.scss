@@ -136,32 +136,12 @@
 }
 
 .form__submit-button {
+  @extend .button;
+
   width: 250px;
-  height: 51px;
 
   margin-top: 19px;
   margin-bottom: 22px;
-
-  font-family: "MullerMedium", Arial, Helvetica, sans-serif;
-
-  color: $white;
-  font-size: 16px;
-  line-height: 18px;
-  background-color: $orange;
-
-  border: none;
-  border-radius: 30px;
-  box-shadow: $orangeShadow;
-
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    background-color: $lightOrange;
-    box-shadow: $lightOrangeShadow;
-
-    outline: none;
-  }
 }
 
 .form__require-note {

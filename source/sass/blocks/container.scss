@@ -14,8 +14,11 @@
   }
 
   &--fullpage {
+    display: flex;
+    justify-content: space-between;
+
     width: 100%;
-    height: fill-available;
+    height: 100%;
 
     max-width: 100%;
 
