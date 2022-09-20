@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+
+  max-width: 1060px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  margin: 0 auto;
+
+  @media (max-width: $mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &--fullpage {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+
+    margin: 0;
+
+    padding: 20px;
+  }
+
+  &--slider {
+    margin: 0;
+
+    width: 100%;
+    max-width: 100%;
+
+    overflow: hidden;
+  }
+
+  &--footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 1720px;
+
+    padding: 72px 20px 0;
+  }
+}
