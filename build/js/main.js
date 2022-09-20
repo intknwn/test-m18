@@ -1,6 +1,44 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./js/scroll.js":
+/*!**********************!*\
+  !*** ./js/scroll.js ***!
+  \**********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "initScroll": function() { return /* binding */ initScroll; }
+/* harmony export */ });
+var initScroll = function initScroll() {
+  var leadButton = document.querySelector(".hero__lead-button");
+  var form = document.querySelector(".form");
+  var contactsButton = document.querySelector(".hero__contact-button");
+  var footer = document.querySelector(".footer");
+  var heroScrollButton = document.querySelector(".hero__scroll-button");
+  var heroScreen = document.querySelector(".hero");
+  leadButton.addEventListener("click", function () {
+    return form.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+  contactsButton.addEventListener("click", function () {
+    return footer.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+  heroScrollButton.addEventListener("click", function () {
+    scrollBy({
+      top: heroScreen.clientHeight,
+      behavior: "smooth"
+    });
+  });
+};
+
+/***/ }),
+
 /***/ "./js/slider.js":
 /*!**********************!*\
   !*** ./js/slider.js ***!
@@ -548,8 +586,11 @@ var __webpack_exports__ = {};
   \********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./slider */ "./js/slider.js");
+/* harmony import */ var _scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scroll */ "./js/scroll.js");
+
 
 (0,_slider__WEBPACK_IMPORTED_MODULE_0__.initSlider)();
+(0,_scroll__WEBPACK_IMPORTED_MODULE_1__.initScroll)();
 }();
 /******/ })()
 ;
