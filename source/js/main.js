@@ -1,1 +1,3 @@
-console.log("hi");
+import { initSlider } from "./slider";
+
+initSlider();

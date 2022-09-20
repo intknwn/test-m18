@@ -44,6 +44,8 @@
   &--inactive {
     opacity: 0.6;
   }
+
+  transition: transform 300ms;
 }
 
 .slider__image img {
@@ -100,6 +102,10 @@
   &:hover,
   &:focus {
     height: 32px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 
   @media (max-width: $mobile) {
